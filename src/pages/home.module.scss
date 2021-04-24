@@ -4,20 +4,25 @@
   overflow-y: scroll;
 
   &::-webkit-scrollbar {
-    width: 5px;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 10px;
+  }
+
+  &::-webkit-scrollbar-corner {
+    border: none;
+    background: none;
   }
 
   &::-webkit-scrollbar-track {
-    background: var(--gray-100);
+    background: transparent;
+    border: none;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: var(--purple-500);
-    border-radius: 1rem;
-  }
-
-  &::-webkit-scrollbar-thumb:hover {
-    background: var(--purple-800);
+    background: var(--background-scrollbar-thumb);
+    border-radius: 3px;
+    cursor: move;
   }
 
   h2 {
@@ -34,8 +39,8 @@
     gap: 1.5rem;
 
     li {
-      background: var(--white);
-      border: 1px solid var(--gray-100);
+      background: var(--backgroundLatest);
+      border: 1px solid var(--borderColor);
       padding: 1.25rem;
       border-radius: 1.5rem;
       position: relative;
@@ -55,7 +60,7 @@
 
         a {
           display: block;
-          color: var(--gray-800);
+          color: var(--color-title);
           font-family: Lexend, sans-serif;
           font-weight: 600;
           text-decoration: none;
@@ -107,8 +112,8 @@
 
         width: 2.5rem;
         height: 2.5rem;
-        background: var(--white);
-        border: 1px solid var(--gray-100);
+        background: var(--backgroundLatest);
+        border: 1px solid var(--borderColor);
         border-radius: 0.675rem;
         font-size: 0;
         transition: filter 0.2s;
@@ -119,7 +124,7 @@
         }
 
         &:hover {
-          filter: brightness(0.95);
+          filter: brightness(0.8);
         }
       }
     }
@@ -135,7 +140,7 @@
     th,
     td {
       padding: 0.75rem 1rem;
-      border-bottom: 1px solid var(--gray-100);
+      border-bottom: 1px solid var(--borderColor);
     }
 
     th {
@@ -155,7 +160,7 @@
       }
 
       a {
-        color: var(--gray-800);
+        color: var(--color-title);
         font-family: Lexend, sans-serif;
         font-weight: 600;
         text-decoration: none;
@@ -170,8 +175,8 @@
       button {
         width: 2rem;
         height: 2rem;
-        background: var(--white);
-        border: 1px solid var(--gray-100);
+        background: var(--backgroundLatest);
+        border: 1px solid var(--borderColor);
         border-radius: 0.5rem;
         font-size: 0;
         transition: filter 0.2s;
@@ -182,7 +187,7 @@
         }
 
         &:hover {
-          filter: brightness(0.95);
+          filter: brightness(0.8);
         }
       }
     }

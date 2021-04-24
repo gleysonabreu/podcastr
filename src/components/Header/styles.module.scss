@@ -1,5 +1,5 @@
 .headerContainer {
-  background: var(--white);
+  background: var(--backgroundHeader);
   height: 6.5rem;
 
   display: flex;
@@ -7,16 +7,43 @@
 
   padding: 2rem 4rem;
 
-  border-bottom: 1px solid var(--gray-100);
+  border-bottom: 1px solid var(--borderColor);
+
+  .logoColor {
+    fill: var(--color-logo);
+  }
 
   p {
     margin-left: 2rem;
     padding: 0.25rem 0 0.25rem 2rem;
-    border-left: 1px solid var(--gray-100);
+    border-left: 1px solid var(--borderColor);
   }
 
-  span {
+  .rightHeader {
     margin-left: auto;
-    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+
+    span {
+      text-transform: capitalize;
+    }
+
+    button {
+      margin-left: 1rem;
+      border: 0;
+      padding: 10px;
+      background: var(--purple-500);
+      border-radius: 1.5rem;
+      color: var(--white);
+      font-size: 0;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
   }
 }
