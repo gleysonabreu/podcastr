@@ -1,6 +1,11 @@
 .wrapper {
   display: flex;
 
+  @media (max-width: 1185px) {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+
   main {
     flex: 1;
   }

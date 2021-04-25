@@ -62,7 +62,8 @@ function Player() {
   }
 
   return (
-    <div className={styles.playerContainer}>
+    <div className={styles.playerWrapper}>
+      <div className={styles.playerContainer}>
       <header>
         <img src='/playing.svg' alt='Tocando agora' />
         <strong>Tocando agora</strong>
@@ -156,6 +157,7 @@ function Player() {
           </button>
         </div>
       </footer>
+    </div>
     </div>
   );
 }

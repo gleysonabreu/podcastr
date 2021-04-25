@@ -5,6 +5,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta charSet="utf-8" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lexend:wght@500;600&display=swap" rel="stylesheet" />
          

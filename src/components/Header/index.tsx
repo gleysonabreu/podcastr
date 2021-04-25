@@ -7,7 +7,7 @@ import { useThemeSwitcherState } from '../../utils/useThemeSwitcherState';
 import styles from './styles.module.scss';
 
 function Header() {
-  const [theme, setTheme] = useThemeSwitcherState('theme', 'light')
+  const [theme, setTheme] = useThemeSwitcherState<string>('theme', 'light');
 
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
