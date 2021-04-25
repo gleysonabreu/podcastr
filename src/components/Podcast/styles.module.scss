@@ -1,0 +1,77 @@
+.podcast {
+  background: var(--backgroundLatest);
+  border: 1px solid var(--borderColor);
+  padding: 1.25rem;
+  border-radius: 1.5rem;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 665px) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1rem;
+  }
+
+  .episodeDetails {
+    flex: 1;
+    margin-left: 1rem;
+
+    @media (max-width: 665px) {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+
+    a {
+      display: block;
+      color: var(--color-title);
+      font-family: Lexend, sans-serif;
+      font-weight: 600;
+      text-decoration: none;
+      line-height: 1.4rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      font-size: 0.875rem;
+      margin-top: 0.5rem;
+      max-width: 70%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    span {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.875rem;
+
+      &:last-child {
+        margin-left: 0.5rem;
+        padding-left: 0.5rem;
+        position: relative;
+
+        &::before {
+          content: "";
+          width: 4px;
+          height: 4px;
+          border-radius: 2px;
+          background: #ddd;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
