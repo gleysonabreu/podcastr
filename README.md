@@ -55,4 +55,12 @@ The app will be available for access on your browser at `http://localhost:3000`
 
 ---
 
+### SEE THE PROJECT RUNNING?
+
+Access the url below to see the project in execution.
+
+- [https://podcastr-kappa-wheat.vercel.app/](https://podcastr-kappa-wheat.vercel.app/)
+
+---
+
 Made with 💜 by Gleyson Abreu.
